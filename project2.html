@@ -39,7 +39,17 @@
             <p>The NHS aims to use data-driven insights to reduce missed GP appointments and understand healthcare capacity across Integrated Care Boards. This analysis focuses on four key areas: service utilisation across networks, appointment trends over time (including the impact of major healthcare disruptions), the drivers behind missed appointments, and budget considerations to determine whether capacity should be increased and where resources should be allocated.</p>
 
             <h3>Analytical Approach</h3>
-            <p>Describe the steps you took: data cleaning, EDA, modelling, visualisation, etc.</p>
+            <p>I began by grounding the analysis in the NHS business problem, reviewing the datasets and metadata to ensure I fully understood the context and structure. Python was used throughout, with Jupyter Notebook as the coding environment. After importing all required libraries and setting a consistent visual theme, I adapted the assignment template into a workflow that aligned with my own analytical process.</p>
+
+            <p>Each dataset was inspected for structure, missing values, and duplicates. This included identifying 31,847 duplicates in the AR dataset, which I retained to preserve analytical integrity. To support regional analysis, I mapped region codes to region names using the AD dataset and created a reference table to merge region names consistently across all data frames.</p>
+
+            <p>My analysis followed a structured approach using grouping, aggregation, percentage calculations, and basic statistics. I created functions to streamline repetitive tasks and keep the workflow efficient.</p>
+
+            <p>In the AD dataset, I calculated appointments per unit by merging region-level appointment counts with board unit totals, and I explored duration categories to identify the most common time blocks. In the AR dataset, I analysed appointment status percentages by region and month, assessed seasonal trends and the impact of COVID‑19, evaluated appointment modes, compared GP‑led versus other staff‑led services, and examined lead time categories to understand their influence on DNA rates.</p>
+
+            <p>The NC dataset was used to explore appointment characteristics across settings and contexts. As the only dataset containing appointment dates, it enabled daily volume analysis by extracting appointment days and aggregating patterns over time.</p>
+
+            <p>Using the Module 6 benchmark of 1.2 million maximum daily capacity, I created a new data frame to calculate daily utilisation rates and assess service efficiency across the period.</p>
 
             <h3>Key Findings</h3>
             <p>Summarise the most important insights you discovered.</p>
