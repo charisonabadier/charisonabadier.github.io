@@ -209,6 +209,57 @@ footer {
     padding: 2rem;
 }
 
+/* ----------------------------- */
+/* ⭐ PROJECT DETAIL IMPROVEMENTS */
+/* ----------------------------- */
+
+.project-detail {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background: white;
+    border-radius: 8px;
+}
+
+/* Major Section Headings */
+.project-detail h3 {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #222;
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 6px;
+}
+
+/* Subsection Headings */
+.project-detail h4 {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #475569;
+}
+
+/* Paragraphs */
+.project-detail p {
+    margin-bottom: 14px;
+    line-height: 1.7;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Bullet Lists */
+.project-detail ul {
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+.project-detail li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .nav-menu {
