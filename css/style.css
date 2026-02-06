@@ -282,3 +282,32 @@ footer {
     margin-bottom: 20px;
     line-height: 1.7;
 }
+
+/* Keep navigation centered on all devices */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center the list and allow wrapping on small screens */
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;   /* prevents overlap */
+    gap: 20px;         /* spacing between items */
+    padding: 0;
+    margin: 0;
+}
+
+/* Prevent weird stacking behaviour */
+nav li {
+    list-style: none;
+}
+
+/* Keep links centered */
+nav a {
+    text-align: center;
+    display: block;
+}
