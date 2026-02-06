@@ -241,12 +241,13 @@ footer {
     color: #475569;
 }
 
-/* Paragraphs */
+/* Paragraphs — now justified */
 .project-detail p {
     margin-bottom: 14px;
     line-height: 1.7;
     font-size: 1rem;
     color: #333;
+    text-align: justify;
 }
 
 /* Bullet Lists */
@@ -258,6 +259,7 @@ footer {
 .project-detail li {
     margin-bottom: 8px;
     line-height: 1.6;
+    text-align: justify;
 }
 
 /* Responsive Design */
