@@ -36,16 +36,41 @@
         <div class="container">
 
             <h3>Background</h3>
-            <p>Write a short overview of the organisational problem, goals, and dataset here.</p>
+            <p>Turtle Games is a global retailer and manufacturer with a broad product range, attracting a diverse customer base. To strengthen sales performance, the company wants to understand how customers earn and use loyalty points, and how these behaviours can guide smarter marketing.</p>
+            <p>My analysis focuses on identifying the behavioural patterns that shape loyalty, segmenting customers based on how they spend and earn, and using these insights to support targeted campaigns, retention, and long term growth.</p>
 
+           
             <h3>Analytical Approach</h3>
-            <p>Describe the steps you took: data preparation, modelling, segmentation, forecasting, etc.</p>
 
+            <p>I started my analysis in Python by loading the dataset into Pandas and running initial checks to understand its structure, quality, and any data issues. Using functions like .head(), .info(), .describe(), and .isnull().sum(), I assessed data types, missing values, and distributions, which helped me identify redundant fields and confirm the dataset was clean enough for deeper analysis.</p>
+            
+            <p>I then prepared the data by removing irrelevant columns, simplifying variable names, and saving a cleaned version for use across both Python and R. For models that required numeric inputs, I encoded categorical variables such as gender and education.</p>
+            
+            <p>With the data ready, I applied several analytical techniques in Python. I ran simple and multiple linear regressions using statsmodels to explore how remuneration, spending score, and age related to loyalty points, checking VIF scores to avoid multicollinearity. I also built a decision tree regressor to capture non-linear relationships, pruning it to prevent overfitting and reviewing feature importances. For segmentation, I used K-Means clustering on remuneration and spending score, selecting five segments using the Elbow method and Silhouette scores. Alongside this, I performed NLP and sentiment analysis on review text, cleaning and tokenising the data, removing stopwords, generating word clouds, and calculating polarity scores.</p>
+            
+            <p>I then moved into R to deepen the descriptive and visual side of the analysis. Using dplyr and ggplot2, I created grouped summaries and visualisations across age, education, gender, and product categories. I aggregated average spending score, remuneration, and loyalty points, and visualised them using bar charts, boxplots, and scatterplots. I also recreated the multiple regression model in R and plotted actual versus predicted values. Finally, I rebuilt the five customer segments using the ClusterR package and layered demographic attributes onto each cluster to identify secondary behavioural patterns.</p>
+
+           
             <h3>Key Findings</h3>
-            <p>Summarise the most important insights you discovered.</p>
 
+            <p>My analysis shows a clear behavioural pattern in how Turtle Games customers earn and accumulate loyalty points. Loyalty increases consistently with higher spending and higher remuneration, meaning customers with stronger purchasing power and spending habits generate the most loyalty value. Age, gender, and education help describe where behaviours appear, but they do not drive loyalty or predict engagement on their own.</p>
+            
+            <p>To support segmentation, I clustered customers using spending score, remuneration, and loyalty points. The resulting groups reflect distinct behavioural profiles, from high-value earners and spenders to lower-value customers. These segments give the marketing team actionable ways to target customers based on engagement and value potential rather than demographics or product categories.</p>
+            
+            <p>Product-level analysis reinforced this behavioural focus. Purchase counts, spending scores, and loyalty points were almost identical across product types, confirming that product choice does not differentiate customers or predict loyalty.</p>
+            
+            <p>Taken together, these patterns show that high-earning, high-spending customers will continue to drive loyalty value, and that behaviour-based segmentation is the most effective way to support Turtle Games’ long-term sales strategy.</p>
+
+            
             <h3>Recommendations</h3>
-            <p>List the actions you would recommend to stakeholders based on your findings.</p>
+
+            <ul>
+                <li>Prioritise high value earners and spenders.</li>
+                <li>Strengthen loyalty pathways for high spending customers with low loyalty.</li>
+                <li>Support loyal but lower spending customers with appreciation driven communication.</li>
+                <li>Activate customers with strong earning power but conservative spending.</li>
+                <li>Use behavioural segmentation as the primary targeting strategy.</li>
+            </ul>
 
             <a href="index.html#projects" class="btn">← Back to Projects</a>
         </div>
