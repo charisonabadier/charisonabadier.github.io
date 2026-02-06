@@ -217,3 +217,9 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+.about-text p {
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
