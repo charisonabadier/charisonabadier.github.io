@@ -37,6 +37,12 @@ body {
     font-weight: bold;
 }
 
+.project-hero-meta p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
