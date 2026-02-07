@@ -324,3 +324,15 @@ nav a {
     color: white;
     position: relative;
 }
+
+/* Desktop navigation layout */
+@media (min-width: 768px) {
+    nav {
+        justify-content: space-between;
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+        gap: 40px;
+    }
+}
