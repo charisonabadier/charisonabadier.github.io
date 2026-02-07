@@ -311,3 +311,16 @@ nav a {
     text-align: center;
     display: block;
 }
+
+.hero {
+    background-image: url("../images/Hero background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 350px;
+    padding: 120px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+}
