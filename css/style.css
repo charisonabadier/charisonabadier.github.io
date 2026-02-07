@@ -159,6 +159,9 @@ body {
     color: #555;
     max-width: 800px;
     margin: 0 auto;
+    text-align: justify;
+    line-height: 1.7;
+    margin-bottom: 20px;
 }
 
 /* Projects Section */
