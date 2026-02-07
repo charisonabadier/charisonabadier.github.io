@@ -37,12 +37,6 @@ body {
     font-weight: bold;
 }
 
-.project-hero-meta p {
-    margin: 5px 0;
-    font-size: 1.1rem;
-    opacity: 0.95;
-}
-
 .nav-menu {
     display: flex;
     list-style: none;
@@ -60,13 +54,53 @@ body {
     color: #7f8c8d;
 }
 
-/* Hero Section */
+/* ----------------------------- */
+/* HERO SECTIONS */
+/* ----------------------------- */
+
+/* Homepage Hero (image only) */
+.home-hero {
+    background-image: url("../images/Hero background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 500px;
+    padding: 150px 2rem;
+    text-align: center;
+    color: white;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dark overlay for readability */
+.home-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    z-index: 1;
+}
+
+.home-hero * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Project Heroes (solid dark navy) */
 .hero {
-    background: linear-gradient(135deg, #475569 0%, #64748b 50%, #94a3b8 100%);
+    background-color: #0A1A2F; /* matched to your image */
     color: white;
     padding: 150px 2rem;
     text-align: center;
-    min-height: 500px;
+    min-height: 350px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,10 +243,7 @@ footer {
     padding: 2rem;
 }
 
-/* ----------------------------- */
-/* ⭐ PROJECT DETAIL IMPROVEMENTS */
-/* ----------------------------- */
-
+/* Project Detail Page */
 .project-detail {
     max-width: 900px;
     margin: 0 auto;
@@ -221,7 +252,6 @@ footer {
     border-radius: 8px;
 }
 
-/* Major Section Headings */
 .project-detail h3 {
     margin-top: 50px;
     margin-bottom: 15px;
@@ -232,7 +262,6 @@ footer {
     padding-bottom: 6px;
 }
 
-/* Subsection Headings */
 .project-detail h4 {
     margin-top: 35px;
     margin-bottom: 10px;
@@ -241,7 +270,6 @@ footer {
     color: #475569;
 }
 
-/* Paragraphs — now justified */
 .project-detail p {
     margin-bottom: 14px;
     line-height: 1.7;
@@ -250,7 +278,6 @@ footer {
     text-align: justify;
 }
 
-/* Bullet Lists */
 .project-detail ul {
     margin-left: 25px;
     margin-bottom: 25px;
@@ -274,65 +301,5 @@ footer {
 
     .projects-grid {
         grid-template-columns: 1fr;
-    }
-}
-
-.about-text p {
-    text-align: justify;
-    margin-bottom: 20px;
-    line-height: 1.7;
-}
-
-/* Keep navigation centered on all devices */
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Center the list and allow wrapping on small screens */
-nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;   /* prevents overlap */
-    gap: 20px;         /* spacing between items */
-    padding: 0;
-    margin: 0;
-}
-
-/* Prevent weird stacking behaviour */
-nav li {
-    list-style: none;
-}
-
-/* Keep links centered */
-nav a {
-    text-align: center;
-    display: block;
-}
-
-.hero {
-    background-image: url("../images/Hero background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    min-height: 350px;
-    padding: 120px 20px;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-/* Desktop navigation layout */
-@media (min-width: 768px) {
-    nav {
-        justify-content: space-between;
-    }
-
-    nav ul {
-        flex-wrap: nowrap;
-        gap: 40px;
     }
 }
