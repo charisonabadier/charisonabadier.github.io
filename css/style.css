@@ -58,7 +58,20 @@ body {
 /* HERO SECTIONS */
 /* ----------------------------- */
 
-/* Homepage Hero (image only) */
+/* Project Heroes (solid dark navy) */
+.hero {
+    background-color: #0A1A2F;
+    color: white;
+    padding: 150px 2rem;
+    text-align: center;
+    min-height: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Homepage Hero (image only) — MUST COME AFTER .hero */
 .home-hero {
     background-image: url("../images/Hero background.png");
     background-size: cover;
@@ -91,19 +104,6 @@ body {
 .home-hero * {
     position: relative;
     z-index: 2;
-}
-
-/* Project Heroes (solid dark navy) */
-.hero {
-    background-color: #0A1A2F; /* matched to your image */
-    color: white;
-    padding: 150px 2rem;
-    text-align: center;
-    min-height: 350px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .hero-content h1 {
