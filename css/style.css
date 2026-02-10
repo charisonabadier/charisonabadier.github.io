@@ -71,7 +71,7 @@ body {
     justify-content: center;
 }
 
-/* Homepage Hero (image only) — MUST COME AFTER .hero */
+/* Homepage Hero (image only) */
 .home-hero {
     background-image: url("../images/Hero background.png");
     background-size: cover;
@@ -89,7 +89,7 @@ body {
     justify-content: center;
 }
 
-/* Dark overlay for readability */
+/* Dark overlay */
 .home-hero::before {
     content: "";
     position: absolute;
@@ -292,8 +292,22 @@ footer {
     text-align: justify;
 }
 
-/* Responsive Design */
+/* ----------------------------- */
+/* MOBILE FIXES */
+/* ----------------------------- */
+
 @media (max-width: 768px) {
+
+    /* Fix About Me spacing */
+    .about p {
+        text-align: center;
+    }
+
+    /* Fix navbar overlap */
+    .logo {
+        font-size: 1.3rem;
+    }
+
     .nav-menu {
         gap: 1rem;
     }
